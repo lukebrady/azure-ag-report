@@ -6,5 +6,5 @@ Reporting for Azure Application Gateway.
 $pr = Get-AGProfile
 $report = New-AGReport($pr)
 Send-MailMessage -Body $report -BodyAsHtml -From <fromaddress> `
-                     -Subject "Application Gateway Report" -SmtpServer <smtpserver> -To $configuration.recipients
+                 -Subject "Application Gateway Report" -SmtpServer <smtpserver> -To $configuration.recipients
 ```
